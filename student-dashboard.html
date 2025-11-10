@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | EduLearn</title>
+  <link rel="stylesheet" href="student-dashboard.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">EduLearn</h2>
+      <ul class="menu">
+        <li class="active"><i class="ri-dashboard-line"></i> Dashboard</li>
+        <li><i class="ri-book-open-line"></i> My Courses</li>
+        <li><i class="ri-pencil-ruler-2-line"></i> Exams</li>
+        <li><i class="ri-user-line"></i> Profile</li>
+        <li><i class="ri-logout-box-r-line"></i> Logout</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <h2>Welcome, <span>Student</span></h2>
+        <div class="top-right">
+          <input type="text" placeholder="Search courses..." />
+          <i class="ri-notification-3-line"></i>
+          <img src="https://i.pravatar.cc/40" alt="user" class="user-img">
+        </div>
+      </header>
+
+      <!-- Progress Section -->
+      <section class="progress-section">
+        <div class="card">
+          <h3>Course Progress</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+          <p>70% Complete</p>
+        </div>
+        <div class="card">
+          <h3>Upcoming Exam</h3>
+          <p>React JS - 15 Nov 2025</p>
+          <button class="btn">View Details</button>
+        </div>
+        <div class="card">
+          <h3>Total Courses</h3>
+          <p>6 Enrolled</p>
+        </div>
+      </section>
+
+      <!-- Enrolled Courses -->
+      <section class="courses-section">
+        <h2>My Courses</h2>
+        <div class="courses">
+          <div class="course-card">
+            <img src="https://i.imgur.com/3Qw6qzP.jpg" alt="course">
+            <div class="course-info">
+              <h4>HTML & CSS Fundamentals</h4>
+              <p>Instructor: John Doe</p>
+              <div class="progress-bar-small">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+              <span>90% Complete</span>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="https://i.imgur.com/zoGzsWz.jpg" alt="course">
+            <div class="course-info">
+              <h4>JavaScript Mastery</h4>
+              <p>Instructor: Sarah Smith</p>
+              <div class="progress-bar-small">
+                <div class="progress" style="width: 60%;"></div>
+              </div>
+              <span>60% Complete</span>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="https://i.imgur.com/G2hH8Hg.jpg" alt="course">
+            <div class="course-info">
+              <h4>React JS Advanced</h4>
+              <p>Instructor: Mark Lee</p>
+              <div class="progress-bar-small">
+                <div class="progress" style="width: 40%;"></div>
+              </div>
+              <span>40% Complete</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
