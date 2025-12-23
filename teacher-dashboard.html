@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Dashboard | EduTrack</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="teacher-dashboard.css">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar">
+      <h2 class="logo">EduTrack</h2>
+      <ul class="menu">
+        <li class="active"><i class="ri-dashboard-line"></i> Dashboard</li>
+        <li><i class="ri-book-line"></i> My Courses</li>
+        <li><i class="ri-file-list-3-line"></i> Exams</li>
+        <li><i class="ri-group-line"></i> Students</li>
+        <li><i class="ri-bar-chart-line"></i> Reports</li>
+        <li><i class="ri-settings-3-line"></i> Settings</li>
+        <li><i class="ri-logout-box-r-line"></i> Logout</li>
+      </ul>
+    </aside>
+
+    <!-- ===== Main Content ===== -->
+    <main class="main-content">
+
+      <!-- Topbar -->
+      <header class="topbar">
+        <h2>Welcome, <span>Teacher</span></h2>
+
+        <div class="top-right">
+          <i class="ri-notification-3-line"></i>
+          <img src="https://i.pravatar.cc/40?img=12" alt="Teacher" class="user-img">
+        </div>
+      </header>
+
+      <!-- ===== Stats Section ===== -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Courses</h3>
+          <p>8</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Students</h3>
+          <p>320</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Upcoming Exams</h3>
+          <p>5</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Earnings</h3>
+          <p>$1,250</p>
+        </div>
+      </section>
+
+      <!-- ===== Courses Section ===== -->
+      <section class="courses-section">
+        <div class="section-header">
+          <h2>My Courses</h2>
+          <button class="btn">+ Add New Course</button>
+        </div>
+
+        <div class="courses">
+          <div class="course-card">
+            <h4>HTML & CSS Fundamentals</h4>
+            <p>Students: 120</p>
+            <p>Status: Active</p>
+            <button>Edit Course</button>
+          </div>
+
+          <div class="course-card">
+            <h4>JavaScript Advanced</h4>
+            <p>Students: 95</p>
+            <p>Status: Active</p>
+            <button>Edit Course</button>
+          </div>
+
+          <div class="course-card">
+            <h4>React JS Bootcamp</h4>
+            <p>Students: 105</p>
+            <p>Status: Draft</p>
+            <button>Edit Course</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Exams Section ===== -->
+      <section class="exam-section">
+        <h2>Upcoming Exams</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Exam Name</th>
+              <th>Course</th>
+              <th>Date</th>
+              <th>Duration</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Midterm Test</td>
+              <td>JavaScript</td>
+              <td>20 Nov 2025</td>
+              <td>90 mins</td>
+              <td><button>Manage</button></td>
+            </tr>
+
+            <tr>
+              <td>Final Exam</td>
+              <td>HTML & CSS</td>
+              <td>5 Dec 2025</td>
+              <td>120 mins</td>
+              <td><button>Manage</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+
+</html>
